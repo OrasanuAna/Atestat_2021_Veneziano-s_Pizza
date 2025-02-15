@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - FAQ</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<header>
+        <nav>
+            <ul>
+				<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+				<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="garnituri.html">SOSURI</a></li>
+						<li><a href="garnituri.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+                </li>
+            </ul>			
+            <div class="cash">00.00RON
+				<img src="images/shoppingcart.gif" alt="" width="80" height="39">
+				<img src="images/profile.jpg" alt="" width="60" height="50">
+			</div>			
+        </nav>
+
+    <!--FAQ-->
+
+    <div class="title">
+			<!--TOP PAGE-->
+             <img src="images/FAQ.jpg" alt="" width="700px" height="70px">
+			
+			<!--COLLAPSABLE_BUTTONS-->
+			<button type="button" class="collapsible">Cum comand?</button>
+			<div class="content">
+				<p>Prin intermediul www.dailypizza.ro poti comanda online, cu plata ramburs sau prin card, produsele pe care le doresti,
+                        fara a te mai deplasa la o unul din restaurantele noastre. Astfel economisesti timp si bani. Fiecare produs pe care 
+                        doresti sa-l cumperi trebuie sa fie adaugat in cosul tau de cumparaturi. In dreptul fiecarui produs exista o casuta
+                        cu mesajul „Cumpara” care iti va adauga produsul selectat direct in cosul tau de cumparaturi.</p>
+			</div>
+			
+			
+			<button type="button" class="collapsible">Pot comanda si prin telefon?</button>
+			<div class="content">
+				<p>Da, se poate. Numarul de telefon la care ne poti contacta este 021 211 0303 sau *1224, de luni pana vineri, intre 09-23
+                        , iar sambata si duminica intre 10-22.</p>
+			</div>
+			
+			
+			<button type="button" class="collapsible">Cum se procedeaza cu comenzile?</button>
+			<div class="content">
+				<p>Comenzile sunt preluate si procesate in cel mai scurt timp posibil pentru a fi savurate cu placere..</p>
+			</div>
+
+			
+			<button type="button" class="collapsible">Care este valoarea minima pentru care pot comanda?</button>
+			<div class="content">
+				<p> Nu exista o valoare minima a comenzii,puteti comanda oricat va doriti.</p>
+			</div>
+			
+			
+			<button type="button" class="collapsible">Cum platesc si cum se face livrarea??</button>
+			<div class="content">
+				<p>
+                        Pentru produsele achizitionate pe www.dailypizza.ro ai la dispozitie urmatoarele modalitati de plata: 
+                </p>
+                <p>
+                        - plata in numerar/ramburs, la livrarea/ridicarea comenzii la domiciliu;
+                </p>
+                <p>
+                        Inainte de expedierea comenzii, cosul de cumparaturi va calcula si va afisa exact valoarea cheltuielilor de transport;
+                </p>
+                <p>
+                        - plata online prin card bancar, indiferent de modalitatea de livrare aleasa
+                </p>
+			</div>
+    </header>       
+		   
+		   <!--SCRIPT_COLLAPSABLE_BUTTONS-->
+		   <script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+					coll[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var content = this.nextElementSibling;
+						if (content.style.display === "block") {
+							content.style.display = "none";
+						} else {
+							content.style.display = "block";
+						}
+					});	
+				}
+			</script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Veneziano's - Desert</title>
+	  <link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!--HEADER-->
+            <header>
+        <nav>
+            <ul>
+							<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+							<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+												<li><a href="bauturi.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+              </li>
+            </ul>			
+            <div class="lol">
+                <ul>
+                    <li><img id="cos" src="images/shoppingcart.gif" alt="" width="80" height="39" onclick="cumparaCos()">
+                        <ul>
+                        <li><a id="cos_value" href=""></a></li>
+                            <script type="module">
+                                import {SetCosValue, cosValue} from './code.js';
+                                try {
+                                    SetCosValue(document.cookie);
+                                    document.getElementById('cos_value').innerHTML = cosValue + ' RON';  
+                                }
+                                catch(err) {
+                                    alert("46: " + err);
+                                }
+                            </script>
+                        </ul>
+                    </li>
+                </ul>
+                <img id="profile" src="images/profile.jpg" alt="" width="60" height="50">
+            </div>		
+        </nav>
+        
+          <script type="module">
+        import {addProductToCart, cumparaCos} from './code.js';
+        try {
+            window.cumparaCos = cumparaCos;
+            window.addProductToCart = addProductToCart;
+        }
+        catch(err) {
+            alert("54: " + err);
+        }
+    </script>  
+    </header>
+        
+    <!--Menu-->
+    <section class="menu">
+        <div class="pizza">
+            <img src="images/desert/clatite.jpg" >
+            <h4>Clatite</h4>
+            <i class="ingrediente">
+            		<b>(ciocolata/afine - 200g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 6RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Clatite', '6')">Adauga in cos</button>
+        </div>
+                
+        <div class="pizza">
+            <img src="images/desert/mouse.jpg" >
+            <h4>Mousse ciocolata </h4>
+            <i class="ingrediente">
+            		<b>(250g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 14RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Mousse ciocolata', '14')">Adauga in cos</button>
+        </div>
+                
+        <div class="pizza">
+            <img src="images/desert/cheese.jpg" >
+            <h4>Cheese Cake</h4>
+           <i class="ingrediente">
+            		<b>(270g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 20RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Cheese Cake', '20')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/desert/placinta.jpg" >
+            <h4>Placinta cu mere</h4>
+           <i class="ingrediente">
+           <i class="ingrediente">
+            		<b>(260g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 18RON
+            <button class="cumpara" onclick="addProductToCart('Placinta cu mere', '18')">Adauga in cos</button>
+        </div>
+    </section>
+</body>
+</html>

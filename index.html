@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's</title>
+	  <link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <script type="module">
+        import {cumparaCos} from './code.js';
+        try {
+            window.cumparaCos = cumparaCos;
+        }
+        catch(err) {
+            alert("18: " + err);
+        }
+    </script>
+
+    <!--HEADER-->
+    <header>
+        <nav>
+            <ul>
+				<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+					<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+						<li><a href="bauturi.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+              </li>
+            </ul>			
+
+            <div class="lol">
+                <ul>
+                    <li>
+                        <img src="images/shoppingcart.gif" alt="" width="80" height="39" onclick="cumparaCos()">
+                        <ul>
+                            <li><a id="cos_value" href=""></a></li>
+                                <script type="module">
+                                    import {cosValue, SetCosValue} from './code.js';
+                                    
+                                    if( document.cookie.length == 0) {
+                                        document.cookie = "cosValue=0";
+                                    }
+                                    else {
+                                        SetCosValue(document.cookie);
+                                    }
+
+                                    try {
+                                        document.getElementById('cos_value').innerHTML = cosValue + ' RON';  
+                                    }
+                                    catch(err) {
+                                        alert("46: " + err);
+                                    }
+                                </script>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="images/profile.jpg" alt="" width="60" height="50">
+            </div>		
+
+        </header>	
+	
+        </nav>
+        <br>
+		
+		<!--Oferta Slideshow SCRIPT-->
+		<script>
+			var i = 0; 			// Start Point
+			var images = [];	// Images Array
+			var time = 5000;	// Time Between Switch
+	 
+			// Image List
+				images[0] = 'images/oferta/oferta1.jpg';
+				images[1] = "images/oferta/oferta2.jpg";
+				images[2] = "images/oferta/oferta3.jpg";
+				images[3] = "images/oferta/oferta4.jpg";
+				images[4] = "images/oferta/oferta5.jpg";
+
+			// Change Image
+			function changeImg(){
+				document.slide.src = images[i];
+
+			// Check If Index Is Under Max	
+				if(i < images.length - 1){
+			// Add 1 to Index
+					i++; 
+				} 
+			else { 
+				// Reset Back To O
+					i = 0;
+				}
+
+			// Run function every x seconds
+				setTimeout("changeImg()", time);
+			}
+
+			// Run function when page loads
+			window.onload=changeImg;
+		</script>
+		
+    <a href="oferte.html"><img class="oferta" name="slide" width="1000" height="525" alt="Center Images" /></a>		
+
+	
+    <!--WORD SECTION-->
+    <section class="word">
+        <div class="word-W">
+            <img src="images/savuros.gif" alt="">
+            <h3>Delicios</h3>
+            <p class="details">
+                <i>
+                    Meniul nostru va ofera o multitudine de preparate concepute din produse de calitate, proaspete si naturale.
+                </i>
+            </p>
+        </div>
+        <div class="word-W">
+            <img src="images/delivery.gif" alt="">
+            <h3>Free Delivery</h3>
+            <p class="details">
+                <i>
+                    Va stam la dispozitie 24/7 pentru ca ne respectam clientii si vrem sa le oferim ce este mai bun.
+                </i>
+            </p>
+        </div>
+        <div class="word-W">
+            <img src="images/cook.gif" alt="">
+            <h3>De incredere</h3>
+            <p class="details">
+                <i>
+                    In echipa noastra avem unii dintre cei mai buni bucatari cu experienta in domeniu.
+                </i>
+            </p>
+        </div>
+        <div class="word-W">
+            <img src="images/money.gif" alt="">
+            <h3>Accesibil</h3>
+            <p class="details">
+                <i>
+                    Preturile noastre sunt promotional avantajoase pentru dumnevoastra.
+                </i>
+            </p>
+        </div>
+    </section>
+    <!--ABOUT US SECTION-->
+    <section class="about-us">
+        <h2>Povestea noastra..</h2>
+            <p>
+                    In anul 2010, un grup de tineri studenti au fondat pizzeria Veneziano's din Cluj. Dupa cinci ani de activitate, succesul i-a facut pe tineri sa deschida un lant de pizzerii in Ploiesti, Pitesti, Brasov, Craiova si bineinteles Bucuresti. Va asteptam cu drag sa ne gustati povestea la o pizza calda, noi lucrand in prezent la cea mai renumita reteta de pizza italieneasca. Va multumim si va asteptam!
+            </p>
+        </h2>
+    </section>	
+    <!--FOOTER-->
+    <footer>
+		<p>	
+			<p class="details">
+                <i>
+                    Unde ne gasiti?
+                </i>
+			</p>	
+		<div class="navbar">
+			<a href="https://www.facebook.com"><img src="images/facebook.png" alt="" width="40" height="40"></a>
+			<a href="https://www.instagram.com"><img src="images/insta.png" alt=""  width="30" height="30"></a>
+			<a href="https://www.google.com/maps/place/Promenada+Mall/@44.4830355,26.0856013,13.25z/data=!4m8!1m2!2m1!1smaps+logo!3m4!1s0x40b202709df4c973:0x3fad1073154a78b9!8m2!3d44.4782276!4d26.103344"><img src="images/maps.png" alt=""  width="20" height="30"></a>		
+		</div>
+		<div class="navbar_bottom">
+			<ul style="list-style: none;">
+				<li><a href="termeni.html">Termeni si conditii</a></li> <!--TO BE DONE -->
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="GDPR.html">GDPR</a></li>
+			</ul>	
+		</div>
+        <p>
+           &copy; Veneziano's Pizza 2010 - 2021. All rights reserved
+        </p>
+    </footer>
+	
+</body>
+</html>

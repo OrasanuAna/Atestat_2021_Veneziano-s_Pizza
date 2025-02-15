@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - Pizza </title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!--HEADER-->
+         <header>
+        <nav>
+            <ul>
+							<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+							<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+												<li><a href="bauturi.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+              </li>
+            </ul>			
+            <div class="cash">00.00RON
+							<img src="images/shoppingcart.gif" alt="" width="80" height="39">
+							<img src="images/profile.jpg" alt="" width="60" height="50">
+						</div>			
+        </nav>
+        
+        
+        
+        
+    <!--Menu-->
+    <section class="menu">
+        <div class="pizza">
+            <img src="images/pizza/fresca.jpg" >
+            <h4>Pizza Fresca</h4>
+            <i class="ingrediente">
+							<b>(blat, sos pizza, mozzarella, ciuperci, ceapa rosie, ardei mixt, masline, porumb)</b>
+            </i>
+            <br>
+            <select class="marime">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/capri.jpg" >
+            <h4>Pizza Capriciosa</h4>
+            <i class="ingrediente">
+               <b>(blat, sos pizza, mozzarella, ciuperci, bacon, piept de pui, masline) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="capri">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/marghe.jpg" >
+            <h4>Pizza Margherita</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella 100% ) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="marghe">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/diav.jpg" >
+            <h4>Pizza Diavola</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, salam picant, chilli) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="diav">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/vege.jpg" >
+            <h4>Pizza Vegetariana</h4>
+            <i class="ingrediente">
+               <b> (blat, sos pizza, mozzarella, ciuperci, ceapa rosie, ardei mixt, masline, porumb)</b>
+            </i>
+            <br>
+            <select class="marime" id="vege">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/hawa.jpg" >
+            <h4>Pizza Hawaii</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, sunca, ananas) &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="hawa">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+             <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/qs.jpg" >
+            <h4>Pizza Quattro Stagioni</h4>
+            <i class="ingrediente">
+                 <b>(blat, sos pizza, mozzarella, ciuperci, salam, sunca, porumb) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="qs">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/chick.jpg" >
+            <h4>Pizza Chicken Deluxe</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, cartofi, bacon, piept de pui, masline) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="chick">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/neptun.jpg" >
+            <h4>Pizza Neptun</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, ceapa rosie, ton, porumb, masline) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara">Adauga in cos</button>
+        </div>
+        
+        
+        <!--- SCRIPT PIZZA PRICE --->
+				<script>
+					
+				</script>        
+    </section>
+</body>
+</html>

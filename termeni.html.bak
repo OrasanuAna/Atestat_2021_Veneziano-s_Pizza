@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - Termeni si conditii</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav>
+            <ul>
+				<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+				<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="garnituri.html">SOSURI</a></li>
+						<li><a href="garnituri.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+                </li>
+            </ul>			
+            <div class="cash">00.00RON
+				<img src="images/shoppingcart.gif" alt="" width="80" height="39">
+				<img src="images/profile.jpg" alt="" width="60" height="50">
+			</div>			
+        </nav>
+        <div class="title">
+            <img src="images/termeni.jpg" alt="" width="700px" height="70px">
+        </div>
+		
+		<!-- TERMENI SI CONDITII TEXT -->
+		
+		<div class="sub">
+			<p> 
+						➤ Ofertele/cupoanele/promoțiile nu se cumulează cu alte oferte aflate deja în derulare.
+			</p> 			
+			<p>
+						➤ Ne rezervăm dreptul de a modifica prețurile și ofertele aflate în derulare fără o notificare în prealabil.
+			</p>
+			<p>
+						➤ Fotografiile sunt cu titlu de prezentare.
+			</p>
+			<p>
+						➤ Fiecare locație are o zona de livrare limitată. Verificați telefonic sau pe site dacă vă aflați în aria de livrare.
+			</p>
+			<p>
+						➤ Comanda minimă pentru livrare, în aria de livrare a locațiilor din București, este de 30 de RON (după aplicarea eventualelor oferte/discounturi). Pentru aria de livrare a locațiilor din țară, Brașov, Vâlcea, Sibiu, Giurgiu, Ploiești și Constanța, comanda minimă este de 25 RON(după aplicarea eventualelor oferte/discounturi).
+			</p>
+			<p>
+						➤ Ne rezervăm dreptul de a decide dacă putem livra în afara ariei de livrare, în timp util. În cazul deciderii preluării comenzii, suma minimă pt livrare este de 100 RON.
+			</p>
+			<p>
+						➤ Livratorii pot oferi rest maxim 100 RON.
+			</p>
+			<p>
+						➤ Prețurile produselor sunt exprimate în RON și includ TVA.
+			</p>
+			<p>
+						➤ Modalități de plată: cash, credit card sau bonuri de masă.
+			</p>
+			<p>
+						➤ Produsele noastre pot conține următorii alergeni: Gluten din grâu, ouă și/sau derivate, lapte și/sau derivate, soia și/sau produse pe bază de soia, pește și/ sau produse pe bază de pește. 
+			</p>
+			<p>
+						➤ Dimensiuni Pizza : Mică -25cm, Medie – 30cm, Mare – 38cm
+			</p>
+			<p>
+						➤ Tipuri de blat : Pufos (disponibil pentru pizza de 25cm, 30cm și 38cm), Italian (ceva mai subțirel - disponibil pentru pizza de 25cm, 30cm și 38cm), Subțire Crocant (disponibil pentru pizza de 30cm), Pufos Philadelphia (disponibil pentru pizza de 30cm)
+			</p>
+			<p>
+						➤ La comenzile online, reducerile se aplica la pizza si aperitive, iar pragurile de discount sunt următoarele: ai 10% dacă totalul comenzii este între 150 - 349.99 RON, si 25% primești la comenzile cu valoare peste 350 RON.
+			</p>
+			<p>
+						➤ Timpul de livrare este de 30 min si este aproximativ. Pentru comenzile online timpul de livrare este afișat înainte de finalizarea comenzii. Pentru comenzile plasate telefonic timpul de livrare este menționat de operatorii telefonici. 
+			</p>
+			<p>
+						➤ Din motive de securitate si pentru evitarea eventualelor confuzii, nu se poate face o a doua comanda in mai putin de 60 de minute de la prima. 
+			
+			<p>
+			
+						Imaginile produselor prezentate pe site sunt cu titlu de prezentare si pot diferi in orice mod (culoare, aspect etc.) de imaginile produselor livrate, acestea putand prezenta abateri minore de la pozele si descrierile prezentate pe site. 
+			</p>
+
+						 
+			</p>
+						RETURNAREA PRODUSELOR / ANULAREA COMENZILOR
+						Clientul poate solicita returnarea produselor / anularea comenzilor in urmatoarele situatii:
+						-Comenzile prezinta deteriorari severe.
+						-Exista intarzieri in livrarea produselor mai mari de 2 ore, calculate din momentul lansarii comenzilor.
+						-Produsele au fost livrate/facturate gresit. Livrarea altor produse decat cele solicitate trebuie semnalata imediat, iar Consumatorul poate refuza receptia.
+						Consumatorul poate solicita returnarea acestuia pentru inlocuire, iar in situatia in care produsul nu se mai afla pe stoc, poate opta pentru inlocuire sau rambursarea integrala a contravalorii.
+						Daca se agreeaza inlocuirea cu un produs de o valoare mai mare, va plati diferenta, respectiv daca valoarea este mai mica, va primi o rambursare partiala pana la valoarea produsului inlocuitor.
+						Costurile de retur si de transport pentru produsul inlocuitor, daca este cazul, sunt suportate de client.
+						Renuntarea la cumparare in mod repetat va putea fi considerata un abuz.
+						In momentul efectuarii unei comenzi, Clientul declara ca a luat cunostinta si este intru totul de acord cu cele mentionate mai sus.
+						Acceptarea acestor termeni si conditii da nastere unui veritabil contract intre parti, facand aplicare clauzelor Codului Civil.
+				</p>
+						 
+
+						In situatia in care suma achitata de catre Client in baza comenzii online, plata card, este anulata de acesta, in conformitate cu regulamentul Veneziano's, restituirea sumei platite in contul Clientului va fi transferata in termen de 30 zile de la anularea comenzii.
+
+			<p>			 
+						În conformitate cu Legea nr. 677/2001, privind protecția persoanelor cu privire la prelucrarea datelor cu caracter personal și libera circulație a acestor date, clientul este informat că scopul solicitării, colectării și procesării datelor, este în principal procesarea comenzii d-voastră, iar in subsidiar în cazul în care s-a dat acceptul expres de a primi Newsletter-urile Veneziano’s Pizza Maxim prin bifarea opțiunii "Doresc să primesc Newsletter" este transmiterea de informații de interes general, informații cu privire la promoții și oferte.
+			<p>
+						Prin înregistrarea pe site-ul nostru, efectuarea de comenzi telefonice și/sau în punctele de desfacere, clientul își dă acordul expres și neechivoc ca datele lui personale să fie prelucrate de către S.C "Veneziano’S PIZZA" S.R.L. 
+			</p>			 
+			<p>
+						Veneziano’S PIZZA SRL
+			</p>
+		</div>
+</header>		
+</body>
+</html>

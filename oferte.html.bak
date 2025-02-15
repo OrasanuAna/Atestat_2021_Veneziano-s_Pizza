@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - Offers</title>
+	  <link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+   <!--HEADER-->
+    <header>
+        <nav>
+            <ul>
+				<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+				<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+												<li><a href="garnituri.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+                </li>
+            </ul>			
+            <div class="cash">00.00RON
+				<img src="images/shoppingcart.gif" alt="" width="80" height="39">
+				<img src="images/profile.jpg" alt="" width="60" height="50">
+			</div>			
+        </nav>
+        <div class="title">
+            <img src="images/oferte.jpg" alt="" width="200px" height="50px">
+        </div>
+	</header>
+	
+	
+	
+    <!--Continutul paginii-->
+			<div class="absolute"><img src="images/oferta/SpecialOffer.png" width="850" height="600" alt="Center Images" style="float:right" id="demo">
+			
+           <!--Oferta1-->
+            <div class="zoom" onmouseover="mouseOver(1)" onmouseout="mouseOut()">
+                <h3>Monday Party Meniu</h3> 
+                <p>
+                    Cumpara o pizza mare, iar cu a 2-a iti facem noi cinste!
+                </p> 
+                <p>
+                    * Oferta disponibila in fiecare luni, intre orele 12:00-22:00.
+                </p>		
+            </div>
+			<div class = "buy" id="option1">Adauga in cos</div>
+			
+			<!--Oferta2-->
+            <div class="zoom" onmouseover="mouseOver(2)" onmouseout="mouseOut()" >
+                    <h3>Burger Tuesday</h3>
+                    <p>
+                            Meniul Burger Veneziano's iti aduce si o bere cadou.
+                    </p> 
+                    <p>
+                            * Oferta este valabila doar pentru zilele de luni.
+                    </p>
+            </div>
+			<div class = "buy" id="option2">Adauga in cos</div>
+			
+			<!--Oferta3-->
+            <div class="zoom" onmouseover="mouseOver(3)" onmouseout="mouseOut()" >
+                    <h3>Extra racoritor</h3>
+                    <p>
+                            La doua pizza medii comandate, te servim cu o racoritoare gratuit.
+                    </p>
+                    <p>
+                            * Oferta nu este disponibila in zilele de luni.
+                    </p>
+            </div>
+			<div class = "buy" id="option3">Adauga in cos</div>
+			
+			<!--Oferta4-->
+			<div class="zoom" onmouseover="mouseOver(4)" onmouseout="mouseOut()" >
+                    <h3>Totul pentru mine</h3>
+                    <p>
+                           La o pizza mica comandata, primesti din partea noasta un mousse de ciocolata.
+                    </p>
+            </div>
+			<div class = "buy" id="option4">Adauga in cos</div>
+			
+			<!--Oferta5-->
+			<div class="zoom" onmouseover="mouseOver(5)" onmouseout="mouseOut()" >
+                    <h3>Meniu Combo Desert</h3>
+                    <p>
+                            Pret special pt combo-ul 3 pizza plus 3 portii de clatite
+					</p>
+					<p>
+                            * Valabil doar pentru: Chicken Deluxe, Quattro Stagioni si Fresca
+                    </p>      
+            </div>
+			<div class = "buy" id="option5">Adauga in cos</div>
+		
+		<!--SCRIPT CHANGE IMAGE ON HOVER-->	
+		<script>
+			function mouseOver(n) {
+				switch (n) {
+					case 1:
+						document.getElementById("demo").src = "images/oferta/oferta1.jpg";
+						document.getElementById("option1").style.visibility = "visible";
+						break;
+					case 2:
+						document.getElementById("demo").src = "images/oferta/oferta2.jpg";
+						document.getElementById("option2").style.visibility = "visible";
+						break;
+					case 3:
+						document.getElementById("demo").src = "images/oferta/oferta3.jpg";
+						document.getElementById("option3").style.visibility = "visible";
+						break;
+					case 4:
+						document.getElementById("demo").src = "images/oferta/oferta4.jpg";
+						document.getElementById("option4").style.visibility = "visible";
+						break;
+					case 5:
+						document.getElementById("demo").src = "images/oferta/oferta5.jpg";
+						document.getElementById("option5").style.visibility = "visible";
+						break;						
+				}		
+			}
+			function mouseOut() {
+				document.getElementById("option1").style.visibility = "hidden";
+				document.getElementById("option2").style.visibility = "hidden";
+				document.getElementById("option3").style.visibility = "hidden";
+				document.getElementById("option4").style.visibility = "hidden";
+				document.getElementById("option5").style.visibility = "hidden";
+			}
+		</script>
+</body>
+</html>

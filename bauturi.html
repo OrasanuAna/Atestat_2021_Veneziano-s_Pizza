@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - Drinks</title>
+	  <link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!--HEADER-->
+         <header>
+        <nav>
+            <ul>
+							<a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+							<li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+												<li><a href="bauturi.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+              </li>
+            </ul>			
+            <div class="lol">
+                <ul>
+                    <li><img id="cos" src="images/shoppingcart.gif" alt="" width="80" height="39" onclick="cumparaCos()">
+                        <ul>
+                        <li><a id="cos_value" href=""></a></li>
+                            <script type="module">
+                                import {SetCosValue, cosValue} from './code.js';
+                                try {
+                                    SetCosValue(document.cookie);
+                                    document.getElementById('cos_value').innerHTML = cosValue + ' RON';  
+                                }
+                                catch(err) {
+                                    alert("46: " + err);
+                                }
+                            </script>
+                        </ul>
+                    </li>
+                </ul>
+                <img id="profile" src="images/profile.jpg" alt="" width="60" height="50">
+            </div>	
+        </nav>
+        
+       <script type="module">
+        import {addProductToCart, cumparaCos} from './code.js';
+        try {
+            window.cumparaCos = cumparaCos;
+            window.addProductToCart = addProductToCart;
+        }
+        catch(err) {
+            alert("54: " + err);
+        }
+    </script>
+    </header>
+   
+   
+    <!--Menu-->
+    <section class="menu">
+        <div class="pizza">
+            <img src="images/bauturi/cappy.jpg" >
+            <h4>Cappy</h4>
+            <i class="ingrediente">
+            		<b>(0.33l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 8RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Cappy', '8')">Adauga in cos</button>
+        </div>
+        </div>
+                
+        <div class="pizza">
+            <img src="images/bauturi/granini.jpg" >
+            <h4>Granini</h4>
+            <i class="ingrediente">
+            		<b>(0.33l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 7RON</i>
+            <br>
+            <button class="cumpara"  onclick="addProductToCart('Granini', '7')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/bauturi/fuzetea.jpg" >
+            <h4>Fuzetea</h4>
+            <i class="ingrediente">
+            		<b>(0.33l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 7RON</i>
+            <br>
+            <button class="cumpara"  onclick="addProductToCart('Fuzetea', '7')">Adauga in cos</button>
+        </div>
+        </div>
+                    
+        <div class="pizza">
+            <img src="images/bauturi/cola.jpg" >
+            <h4>Coca-Cola</h4>
+          	<i class="ingrediente">
+            		<b>(0.5l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 5RON</i>
+            <br>
+            <button class="cumpara"  onclick="addProductToCart('Coca-Cola', '5')">Adauga in cos</button>
+        </div>
+        </div>
+
+        <div class="pizza">
+            <img src="images/bauturi/sprite.jpg" >
+            <h4>Sprite</h4>
+            <i class="ingrediente">
+            		<b>(0.5l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 5RON</i>
+            <br>
+            <button class="cumpara"  onclick="addProductToCart('Sprite', '5')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/bauturi/fanta.jpg" >
+            <h4>Fanta</h4>
+            <i class="ingrediente">
+            		<b>(0.5l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 5RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Fanta', '5')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/bauturi/schweppes.jpg" >
+            <h4>Schweppes</h4>
+            <i class="ingrediente">
+            		<b>(0.5l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 5RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Schweppes', '5')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/bauturi/burn.jpg" >
+            <h4>Burn</h4>
+            <i class="ingrediente">
+            		<b>(0.25l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 11RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Burn', '11')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/bauturi/Carlsberg.jpg" >
+            <h4>Carlsberg</h4>
+            <i class="ingrediente">
+            		<b>(0.5l)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 7RON</i>
+            <br>
+            <button class="cumpara" onclick="addProductToCart('Carlsberg', '7')>Adauga in cos</button>
+        </div>
+    </section>
+</body>
+</html>

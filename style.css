@@ -1,0 +1,449 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url(images/lemn_fundal.png);
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+    display: table;
+    width: 100%;
+    height: 10vh;
+
+}
+
+nav {
+    padding: 0 10px;
+    width: 100%;
+    height: 108px;
+    background-color: #C91330;
+    position: fixed;
+	z-index: 1;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+nav ul {
+    position: sticky;
+    margin: 50;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+	padding-top: 30px;
+    grid-column-gap: 1px;
+    float: left;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+	width:145px;
+	height:30px;
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 17px;
+    text-align: left;
+}
+nav ul li img {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding: 17px;
+    text-align: left;
+}
+
+nav ul li :hover {
+    background-color: rgba(255,164,53,1);
+	background-size: 55%;
+    color: #000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0;
+    width: 160px;
+    text-align: center;
+}
+
+nav ul ul li:a {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 7px 17px 17px 67px;
+}
+
+nav ul li:nth-child(2):hover ul{
+    display: block;
+}
+nav ul li:nth-child(1):hover ul{
+    display: block;
+}
+
+IMG.oferta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.cart {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    margin-right: 5%;
+    text-align: left;
+    padding-top: 35px;
+}
+
+.title {
+    width: auto;
+	height: auto;
+	min-height: 10%;
+    text-align: center;
+    color: #000000;
+	background-color: #C91330; 
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 19px;
+    font-weight: 200;
+    margin-top: -20px;
+}
+#profile{
+margin-top: 50px;
+}
+
+.word {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10%;
+    margin-top: 150px;
+    margin-left: 12%;
+    padding: 10px;
+}
+
+.word-W {
+    text-align: center;
+}
+
+.word-W img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    /*border-radius: 50%;*/
+}
+
+.word-W h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.details {
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.about-us {
+    padding: 5% 10% 5% 10%;
+    color: #fff;
+    background-color: #000;
+}
+
+.about-us h2 {
+    margin-top: 50px;
+    margin-left: 12%;
+}
+
+footer {
+	padding-top: 25px;
+    text-align: center;
+}
+
+/*-------------MENU---------------*/
+
+/*PIZZA*/
+
+.menu {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin-left: 0px;
+}
+
+.pizza {
+    background-color: #FFA435;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: #ddd;
+   	padding: 30px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.pizza:hover{
+	color: white;
+	-ms-transform: scale(1.05); /* IE 9 */
+	-webkit-transform: scale(1.05); /* Safari 3-8 */
+	transform: scale(1.05); 
+}
+
+.price{
+		
+		color: black;
+		font-family:"French Script MT";
+    text-align: center;
+    width:180px;
+    height: 30px;
+    margin-left: 130px;
+    font-size: 30px;
+}
+
+.pizza img {
+    width: 470px;
+    height: 300px;
+    padding-left: 1.5%;
+}
+
+.pizza h4 {
+		color: black;
+    text-align: center;
+    font-family:"Edwardian Script ITC";
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.pizza h6 {
+		color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+.ingrediente {
+		font-size: 34px;
+		color: black;
+		font-family:"French Script MT";
+    text-align: center;
+    font-weight: lighter;
+}
+  
+.pizza a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.pizza .marime {
+    background: #C91330;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: none;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    margin-top: 20px;
+}
+
+/*---GARNITURI---*/
+
+.cumpara {
+    background: #C91330;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 290px;
+    cursor: pointer; 
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.cumpara a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.cumpara:hover {
+    background-color: brown;
+}
+
+
+.sub {
+    background-color: #ccc;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: #333;
+    padding: 3rem;
+    margin-top: 20px;
+}
+
+/* --- Centered --- */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* --- Add to cart --- */
+.buy {
+    visibility:hidden; 
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 45%;
+	border-radius: 5px;
+	background-color: FFA435;
+}
+
+/* --- ZOOM EFFECT --- */ 
+	/* sub zoom effect */
+.zoom {
+	margin-left: 0%;
+	text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: #000000;
+	background-color:#FFA435;
+    padding-left: 10%;
+    margin-top:10px;
+	width: 40%;
+	height: 15%;
+}
+
+.zoom:hover {
+	color: white;
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1); 
+}
+
+/* --- COLAPSABLE --- */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.oferte {
+	position: relative;
+}
+
+
+/* --- NAVBARS --- */
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {   
+	text-align: center;
+	position: relative;
+    margin:0;
+	padding-left: 45%;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-column-gap: 60px;
+    float: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: left;
+  padding: 4px 1px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #e8e8e8;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: black;
+}
+
+/* second NAVBAR
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar_bottom {   
+	text-align: left;
+	position: relative;
+    margin:0;
+	padding-left: 37.5%;
+    display: grid;
+    grid-template-columns: repeat(10px,1fr);
+    grid-column-gap: 80px;
+    float: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar_bottom a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: left;
+  padding: 4px 1px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left:35px;
+}
+
+/* Change the color of links on hover */
+.navbar_bottom a:hover {
+  background-color: #e8e8e8;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar_bottom a.active {
+  color: black;
+}

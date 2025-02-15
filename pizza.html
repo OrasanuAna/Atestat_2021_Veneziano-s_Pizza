@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - Pizza </title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!--HEADER-->
+         <header>
+        <nav>
+            <ul>
+                <a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+                <li><a href="#">Meniu</a>
+                    <ul>
+                        <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+						<li><a href="bauturi.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+              </li>
+            </ul>			
+			<div class="lol">
+                <ul>
+                    <li><img id="cos" src="images/shoppingcart.gif" alt="" width="80" height="39" onclick="cumparaCos()">
+                        <ul>
+                        <li><a id="cos_value" href=""></a></li>
+                            <script type="module">
+                                import {SetCosValue, cosValue} from './code.js';
+                                try {
+                                    SetCosValue(document.cookie);
+                                    document.getElementById('cos_value').innerHTML = cosValue + ' RON';  
+                                }
+                                catch(err) {
+                                    alert("46: " + err);
+                                }
+                            </script>
+                        </ul>
+                    </li>
+                </ul>
+                <img id="profile" src="images/profile.jpg" alt="" width="60" height="50">
+            </div>
+        </nav>
+    </header>
+
+    <script type="module">
+        import {mySelectChangeFunction, addPizzaToCart, cumparaCos} from './code.js';
+        try {
+            window.mySelectChangeFunction = mySelectChangeFunction;
+            window.addPizzaToCart = addPizzaToCart;
+            window.cumparaCos = cumparaCos;
+        }
+        catch(err) {
+            alert("54: " + err);
+        }
+    </script>
+    
+            
+    <!--Menu-->
+    <section class="menu">
+        <div class="pizza">
+            <img src="images/pizza/fresca.jpg" >
+            <h4>Pizza Fresca</h4>
+            <i class="ingrediente">
+							<b>(blat, sos pizza, mozzarella, ciuperci, ceapa rosie, ardei mixt, masline, porumb)</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_fresca" onchange="mySelectChangeFunction('pizza_fresca','pizza_fresca_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" id="pizza_fresca_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Fresca', 'pizza_fresca')">Adauga in cos</button>
+             <script>
+            </script>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/capri.jpg" >
+            <h4>Pizza Capriciosa</h4>
+            <i class="ingrediente">
+               <b>(blat, sos pizza, mozzarella, ciuperci, bacon, piept de pui, masline) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_capri" onchange="mySelectChangeFunction('pizza_capri','pizza_capri_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option> 
+            </select>
+           <i class="price" id="pizza_capri_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara"  onclick="addPizzaToCart('Capriciosa', 'pizza_capri')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/marghe.jpg" >
+            <h4>Pizza Margherita</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella 100% ) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_margherita" onchange="mySelectChangeFunction('pizza_margherita','pizza_margherita_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" id="pizza_margherita_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Margherita', 'pizza_margherita')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/diav.jpg" >
+            <h4>Pizza Diavola</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, salam picant, chilli) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_diav" onchange="mySelectChangeFunction('pizza_diav','pizza_diav_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" id="pizza_diav_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Diavola', 'pizza_diav')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/vege.jpg" >
+            <h4>Pizza Vegetariana</h4>
+            <i class="ingrediente">
+               <b> (blat, sos pizza, mozzarella, ciuperci, ceapa rosie, ardei mixt, masline, porumb)</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_vege" onchange="mySelectChangeFunction('pizza_vege','pizza_vege_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" id="pizza_vege_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Vegetariana', 'pizza_vege')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/hawa.jpg" >
+            <h4>Pizza Hawaii</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, sunca, ananas) &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_hawa" onchange="mySelectChangeFunction('pizza_hawa','pizza_hawa_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+             <i class="price" id="pizza_hawa_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Hawaii', 'pizza_hawa')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/qs.jpg" >
+            <h4>Pizza Quattro Stagioni</h4>
+            <i class="ingrediente">
+                 <b>(blat, sos pizza, mozzarella, ciuperci, salam, sunca, porumb) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_qs" onchange="mySelectChangeFunction('pizza_qs','pizza_qs_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" id="pizza_qs_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Quatro Stagionii', 'pizza_qs')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/chick.jpg" >
+            <h4>Pizza Chicken Deluxe</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, cartofi, bacon, piept de pui, masline) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_chick" onchange="mySelectChangeFunction('pizza_chick','pizza_chick_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+            <i class="price" id="pizza_chick_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Chicken Deluxe', 'pizza_chick')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/pizza/neptun.jpg" >
+            <h4>Pizza Neptun</h4>
+            <i class="ingrediente">
+                <b>(blat, sos pizza, mozzarella, ceapa rosie, ton, porumb, masline) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp</b>
+            </i>
+            <br>
+            <select class="marime" id="pizza_neptun" onchange="mySelectChangeFunction('pizza_neptun','pizza_neptun_pret' )">
+                <option value="mica">Mica 25cm</option>
+                <option value="medie">Medie 32cm</option>
+                <option value="mare">Mare 45cm</option>
+            </select>
+           <i class="price" id="pizza_neptun_pret">Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addPizzaToCart('Neptun', 'pizza_neptun')">Adauga in cos</button>
+        </div>
+        
+        
+        <!--- SCRIPT PIZZA PRICE --->
+				<script>
+					
+				</script>        
+    </section>
+</body>
+</html>

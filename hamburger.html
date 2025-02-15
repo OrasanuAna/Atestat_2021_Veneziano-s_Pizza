@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veneziano's - Burger </title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/veneziano's.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <!--HEADER-->
+      <header>
+        <nav>
+            <ul>
+                <a href="index.html"><img src="images/venice1.jpg" alt="" width="420" height="59"></a>	
+                <li><a href="#">Meniu</a>
+                    <ul>
+                       <li><a href="pizza.html">PIZZA</a></li>
+                        <li><a href="hamburger.html">BURGER</a></li>
+                        <li><a href="sosuri.html">SOSURI</a></li>
+												<li><a href="bauturi.html">Bauturi</a></li>
+                        <li><a href="desert.html">Desert</a></li>
+                    </ul>
+              </li>
+            </ul>			
+			<div class="lol">
+                <ul>
+                    <li><img id="cos" src="images/shoppingcart.gif" alt="" width="80" height="39" onclick="cumparaCos()">
+                        <ul>
+                        <li><a id="cos_value" href=""></a></li>
+                            <script type="module">
+                                import {cosValue, SetCosValue} from './code.js';
+                                try {
+                                    SetCosValue(document.cookie);
+                                    document.getElementById('cos_value').innerHTML = cosValue + ' RON';  
+                                }
+                                catch(err) {
+                                    alert("46: " + err);
+                                }
+                            </script>
+                        </ul>
+                    </li>
+                </ul>
+                <img id="profile" src="images/profile.jpg" alt="" width="60" height="50">
+            </div>		
+        </nav>
+
+        <script type="module">
+            import {addProductToCart, cumparaCos} from './code.js';
+            try {
+                window.cumparaCos = cumparaCos;
+                window.addProductToCart = addProductToCart;
+            }
+            catch(err) {
+                alert("54: " + err);
+            }
+        </script>
+    </header>
+        
+        
+    <!--MENIU-->
+    <section class="menu">
+        <div class="pizza">
+            <img src="images/burger/classic.jpg" >
+            <h4>Classic Burger</h4>
+            <i class="ingrediente">
+                <b>(Chifla, carne vita 200g, rosii, salata, bacon, castraveti murati, branza Cheddar, ceapa, sos barbeque, sos burger)</b>
+                <br>
+                <b>(400g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 27RON</i>
+            <br>
+             <button class="cumpara" onclick="addProductToCart('Clasic Burger', '27')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/burger/pesto.jpg" >
+            <h4>Pesto Burger</h4>
+            <i class="ingrediente">
+                <b>(Chifla, carne de pui 200 g, branza cheddar, castraveti murati, salata,rosii, sos pesto, ketchup)</b>
+                <br>
+                <b>(320g)</b>
+            </i>
+           <br>
+            <i class="price" >Pret: 33RON </i>
+            <br>
+             <button class="cumpara" onclick="addProductToCart('Pesto Burger', '33')">Adauga in cos</button>
+        </div>
+        
+        <div class="pizza">
+            <img src="images/burger/cheese.jpg" >
+            <h4>Cheeseburger</h4>
+            <i class="ingrediente">
+                <b>(Chifla, carne vita 200g, 2xbranza Cheddar, rosii, castraveti murati, sos barbeque, branza Gouda)</b>
+                <br>
+                <b>(350g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 30RON</i>
+            <br>
+             <button class="cumpara" onclick="addProductToCart('Cheeseburger', '30')">Adauga in cos</button>
+        </div>
+
+        <div class="pizza">
+            <img src="images/burger/veggie.jpg" >
+            <h4>Viggie Burger</h4>
+            <i class="ingrediente">
+               <b>(Chifla Burger,sfecla, cartofi, morcovi, arpacas, chimen, fulgi ovaz, quinoa, avocado, sos mango, valeriana, rosii )</b>
+                <br>
+                <b>(320g)</b>
+            </i>
+            <br>
+            <i class="price" >Pret: 35RON</i>
+            <br>
+             <button class="cumpara" onclick="addProductToCart('Viggie Burger', '8')">Adauga in cos</button>
+        </div>
+    </section>
+</body>
+</html>
