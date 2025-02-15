@@ -7,6 +7,10 @@ This repository contains the **"Veneziano's Pizza"** project, created by **Ana-M
 
 "Veneziano's Pizza" is a website designed to represent a fictional pizza restaurant. It includes multiple pages that cover various aspects of the business, such as the menu, contact information, and promotions. The primary goal of this project is to simulate a professional and functional website for a business.
 
+# Live Demo
+
+You can view the live demo of the project here: [Veneziano's Pizza Live Demo](https://orasanuana.github.io/Atestat_2021_Veneziano-s_Pizza/)
+
 
 # Key Features
 
