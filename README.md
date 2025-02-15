@@ -2,15 +2,13 @@
 
 This repository contains the **"Veneziano's Pizza"** project, created by **Ana-Maria Orășanu** in 2021 as part of the requirements for obtaining the Informatics Certification. The project is a web-based application for a fictional pizza restaurant, showcasing skills in web development using HTML, CSS, and JavaScript.
 
----
 
-## Project Overview
+# Project Overview
 
 "Veneziano's Pizza" is a website designed to represent a fictional pizza restaurant. It includes multiple pages that cover various aspects of the business, such as the menu, contact information, and promotions. The primary goal of this project is to simulate a professional and functional website for a business.
 
----
 
-## Key Features
+# Key Features
 
 - **Web Pages**:
   - `index.html` - The homepage of the website.
@@ -31,9 +29,8 @@ This repository contains the **"Veneziano's Pizza"** project, created by **Ana-M
   - `code.js` - JavaScript for interactive functionalities.
   - `images` - Directory containing images used throughout the website.
 
----
 
-## Project Structure
+# Project Structure
 
 The project is organized as follows:
 ```
@@ -55,22 +52,16 @@ Atestat_2021_Veneziano-s_Pizza/
 └── images/
 ```
 
----
-
-## Technologies Used
+# Technologies Used
 
 - **HTML**: For the structure of the web pages.
 - **CSS**: For styling and visual appearance.
 - **JavaScript**: For dynamic and interactive functionalities.
 
----
-
-## Project Purpose
+# Project Purpose
 
 This project was created in 2021 to fulfill the requirements for the Informatics Certification, demonstrating the author's skills in web application development and expertise in fundamental front-end technologies.
 
----
-
-## Author
+# Author
 
 Project created by **Ana-Maria Orășanu**.
