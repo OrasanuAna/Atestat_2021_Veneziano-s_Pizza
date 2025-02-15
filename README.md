@@ -11,6 +11,12 @@ This repository contains the **"Veneziano's Pizza"** project, created by **Ana-M
 
 You can view the live demo of the project here: [Veneziano's Pizza Live Demo](https://orasanuana.github.io/Atestat_2021_Veneziano-s_Pizza/)
 
+# Screenshot
+
+Below is a screenshot of the project homepage:
+
+![Veneziano's Pizza Homepage](https://github.com/OrasanuAna/Atestat_2021_Veneziano-s_Pizza/blob/master/Home.jpg)
+
 
 # Key Features
 
